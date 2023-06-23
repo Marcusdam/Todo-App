@@ -1,0 +1,140 @@
+body{
+    height: 100vh;
+    background: #ede6f1;
+    font-family: 'poppins', sans-serif;
+}
+
+ .container{ 
+    width: 50%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: rgba(100, 100, 111, .8) 0px 7px 29px 0px;
+   
+} 
+h2{
+    text-align: center;
+    padding: 2px;
+    font-size: 32px;
+    color: #030449;
+}
+#newtask{
+    position: relative;
+    margin-right: 40px;
+}
+#newtask input{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    padding: 16px;
+    font-weight: 500;
+    background: 
+    #cdcdf785;
+    color: #000;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+}
+
+#newTask input:focus{
+    outline: none;
+    border-radius: #4e4cff;
+
+}
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    left: 29px;
+    /* height: 45px; */
+    border-radius: 40px;
+    padding: 22px;
+    margin-top: -62px;
+    margin-left: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    background: rgb(252, 67, 67);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-right: 6px solid rgb(189, 187, 187);
+    border-left: 6px solid rgb(189, 187, 187);
+    transition: .4s;
+
+} 
+#newtask button:hover{
+    
+    background: rgb(252, 89, 89);
+   
+    
+
+} 
+#task{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+#task li{
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+#task li::before{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(unchecked.png) ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+} 
+#task li.checked{
+    color: red;
+    text-decoration: line-through;
+    
+}
+#task li.checked::before{
+    content: ' ';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(checked.png) ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+li span{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(252, 67, 67);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+li span:hover{
+    background: #edeef0;
+
+}
