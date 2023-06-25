@@ -144,9 +144,7 @@ li span:hover{
 
 @media only screen and (max-width:600px ) {
 
-    body{
-       
-    }
+   
     #newtask button{
        padding: 8px 28px;
        border-radius: 8px;
