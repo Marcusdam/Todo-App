@@ -1,12 +1,12 @@
 body{
     height: 100vh;
     background: #ede6f1;
-    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
 }
 
  .container{ 
     width: 50%;
-    min-width: 450px;
+    /* min-width: 450px; */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -51,11 +51,9 @@ h2{
 #newtask button{
     position: relative;
     float: right;
-    width: 20%;
     left: 29px;
-    /* height: 45px; */
     border-radius: 40px;
-    padding: 22px;
+    padding: 22px 52px;
     margin-top: -62px;
     margin-left: 80px;
     font-size: 15px;
@@ -71,27 +69,26 @@ h2{
 
 } 
 #newtask button:hover{
-    
     background: rgb(252, 89, 89);
-   
-    
-
 } 
-#task{
+#my-task{
     margin-top: 20px;
     border-radius: 10px;
     width: 100%;
     position: relative;
 }
-#task li{
-    padding: 12px 8px 12px 50px;
+#my-task li{
+    padding: 12px 20px 12px 50px;
     font-size: 17px;
     list-style: none;
-    user-select: none;
     cursor: pointer;
     position: relative;
+    word-break: break-all;
+    padding-right: 100px;
+    border: 1px solid #dad8d87a;
+    
 }
-#task li::before{
+#my-task li::before{
     content: ' ';
     position: absolute;
     height: 20px;
@@ -103,12 +100,12 @@ h2{
     top: 12px;
     left: 8px;
 } 
-#task li.checked{
+#my-task li.checked{
     color: red;
     text-decoration: line-through;
     
 }
-#task li.checked::before{
+#my-task li.checked::before{
     content: ' ';
     position: absolute;
     height: 22px;
@@ -133,8 +130,47 @@ li span{
     text-align: center;
     border-radius: 50%;
 
+
 }
 li span:hover{
     background: #edeef0;
 
 }
+
+
+
+
+
+
+@media only screen and (max-width:600px ) {
+
+    body{
+       
+    }
+    #newtask button{
+       padding: 8px 28px;
+       border-radius: 8px;
+       border: none;
+       margin-top: 10px;
+
+}
+
+.container{ 
+    width: 65%;
+    height: 80%;
+    padding: 40px;
+   
+} 
+#newtask input{
+ 
+    width: 100%;
+    height: 20px;
+    /* padding: auto; */
+    border-radius: 8px;
+}
+#my-task li{
+    top: 30px;    
+}
+
+}
+
