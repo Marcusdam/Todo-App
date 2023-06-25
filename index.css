@@ -155,7 +155,7 @@ li span:hover{
 
 .container{ 
     width: 100%;
-/*     padding: 0px; */
+    padding: 40px; 
    
 }  
 #newtask input{
